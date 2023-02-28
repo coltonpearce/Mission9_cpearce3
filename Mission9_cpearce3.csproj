@@ -5,9 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Shared\ProductSummary.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="wwwroot\" />
-    <Folder Include="Views\" />
   </ItemGroup>
 
   <ItemGroup>
