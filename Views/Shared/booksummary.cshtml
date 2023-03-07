@@ -3,6 +3,7 @@
 
 @model Book
 
+<!--This is the page that will display when they are looking for books.-->
 <div class="card card-outline-primary m-1 p-1">
     <div class="bg-faded p-1">
         <h4>
@@ -20,4 +21,16 @@
         <br />
         <br />
     </div>
+    <form method="post" asp-page="/Buy">
+
+        <input type="hidden" asp-for="@Model.BookId"/>
+        <input type ="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()"/>
+
+        <span class="card-text">
+            <button type="submit" class="btn btn-success btn-small float-end">Buy Book</button>
+        </span>
+
+    </form>
 </div>
+
+
