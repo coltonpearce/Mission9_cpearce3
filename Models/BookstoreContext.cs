@@ -20,5 +20,7 @@ namespace Mission9_cpearce3.Models
         }
 
         public DbSet<Book> Books { get; set; }
+        public DbSet<Buy> Buy { get; set; }
+
     }
 }
